@@ -1,11 +1,9 @@
-clear all; close all; clc;
-
 % Carrega os dados
 load controlador_continuo.mat; % Carrega y_cont (2x401)
 load controlador_discreto.mat; % Carrega y_disc (2x401)
 
-y_cont = res_cont;
-y_disc = res_disc;
+y_cont = res_di
+y_disc = 
 
 % Verifica dimensões
 if ~isequal(size(y_cont), size(y_disc))
