@@ -33,7 +33,7 @@ tempo = 0:0.05:20; % Exemplo: 401 pontos de 0 a 4 segundos (ajuste conforme seu 
 %subplot(2,1,2);
 plot(tempo, y_cont(2,:), 'b', 'LineWidth', 1.5); hold on;
 plot(tempo, y_disc(2,:), 'r--', 'LineWidth', 1.5);
-title('Comparação contínuo vs discreto');
+title('Comparação saída do controlador contínuo vs discreto');
 xlabel('Tempo (s)');
 ylabel('Amplitude');
 legend('Contínuo', 'Discreto');
