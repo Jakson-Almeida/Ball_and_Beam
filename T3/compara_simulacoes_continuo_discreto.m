@@ -13,22 +13,22 @@ end
 
 tempo = 0:0.05:20; % Exemplo: 401 pontos de 0 a 4 segundos (ajuste conforme seu caso)
 
-% Plot comparativo para a primeira variável
-figure;
-subplot(2,1,1);
-plot(tempo, y_cont(1,:), 'b', 'LineWidth', 1.5); hold on;
-plot(tempo, y_disc(1,:), 'r--', 'LineWidth', 1.5);
-title('Comparação contínuo vs discreto - Saída 1');
-xlabel('Tempo (s)');
-ylabel('Amplitude');
-legend('Contínuo', 'Discreto');
-grid on;
+% % Plot comparativo para a primeira variável
+% figure;
+% subplot(2,1,1);
+% plot(tempo, y_cont(1,:), 'b', 'LineWidth', 1.5); hold on;
+% plot(tempo, y_disc(1,:), 'r--', 'LineWidth', 1.5);
+% title('Comparação contínuo vs discreto - Saída 1');
+% xlabel('Tempo (s)');
+% ylabel('Amplitude');
+% legend('Contínuo', 'Discreto');
+% grid on;
 
 % Plot comparativo para a segunda variável
-subplot(2,1,2);
+%subplot(2,1,2);
 plot(tempo, y_cont(2,:), 'b', 'LineWidth', 1.5); hold on;
 plot(tempo, y_disc(2,:), 'r--', 'LineWidth', 1.5);
-title('Comparação contínuo vs discreto - Saída 2');
+title('Comparação contínuo vs discreto');
 xlabel('Tempo (s)');
 ylabel('Amplitude');
 legend('Contínuo', 'Discreto');
