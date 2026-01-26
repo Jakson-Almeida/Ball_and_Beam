@@ -53,6 +53,12 @@ p1 = -zeta*wn + 1i*wn*sqrt(1-zeta^2);
 p2 = conj(p1);
 p3 = 6*real(p1);            % polo do integrador
 
+%% JAKSON MUDOU AQUI
+p1 = -0.7*4 + 1i*4*sqrt(1-0.7^2);
+p2 = conj(p1);
+p3 = -16;
+%% JAKSON MUDOU AQUI
+
 z_poles = exp([p1 p2 p3]*Ts);
 
 %% =========================
